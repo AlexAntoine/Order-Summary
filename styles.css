@@ -21,46 +21,88 @@ body{
 }
 
 .main-container{
-    height: 400px;  
-    width: 200px;
+    height: 469px;  
+    width: 287px;
     align-self: center;
+   
 }
 
 .top-half{
     height: 30%;
-    /* border: 2px solid red; */
+    border-radius:10px 10px 0 0;
     background-image: url('./images/illustration-hero.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bottom-half{
+    border-radius: 0 0 10px 10px;
     background-color: white;
     display: flex;
     height: auto;
     flex-direction: column;
     text-align: center;
-    border: 2px solid green;
 }
 
 .order-summary{
     padding: 15px;
+}
+
+.order-summary h4{
     font-family: 'Red Hat Display';
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .order-paragraph{
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
     font-family: 'Red Hat Display'
 }
-
-
 
 p{
     font-size: 16px;
     color: hsl(224, 23%, 55%);
+}
+
+.order-plan-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px;
+    font-family: 'Red Hat Display';
+    
+}
+
+.subscription-box h5{
+    font-weight: 900;
+}
+
+.change-button a{
+    font-weight: 700;
+}
+
+.payment{
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    width: 80%;
+    align-self: center;
+    margin-top: 20px;
+}
+
+#payment-button{
+    background-color: hsl(245, 75%, 52%);
+    font-family: 'Red Hat Display';
+    color: white;
+    width: 100%;
+    padding: 5px;
+    
+    border-radius: 10px;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
