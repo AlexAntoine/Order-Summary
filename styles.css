@@ -5,10 +5,6 @@
     margin: 0;
 }
 
-html{
-  
-}
-
 body{
     height: 100vh;
     background-image: url('./images/pattern-background-mobile.svg');
@@ -95,14 +91,28 @@ p{
     margin-top: 20px;
 }
 
-#payment-button{
+/* #payment-button{
     background-color: hsl(245, 75%, 52%);
     font-family: 'Red Hat Display';
     color: white;
     width: 100%;
     padding: 5px;
-    
     border-radius: 10px;
+    border-color: none;
+} */
+
+.cancel-order{
+    border: 2px solid red;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
+
+.cancel-order button{
+    border: none;
+    background-color: none !important;
+    /* color: hsl(224, 23%, 55%);   */
+    /* background-color: hsl(225, 100%, 98%);; */
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
