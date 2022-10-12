@@ -5,37 +5,49 @@
     margin: 0;
 }
 
-body{
+html{
     height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100%;
     background-image: url('./images/pattern-background-mobile.svg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+   
 
 }
 
 .main-container{
-    height: 469px;  
+    min-height: 469px;  
     width: 287px;
     align-self: center;
+    /* display: flex;
+    flex-direction: column; */
+    border: 2px solid red;
    
 }
 
 .top-half{
-    height: 30%;
+    max-height: 50%;
+}
+
+.top-half img{
+    width: 100%;
+    height: 100%;
     border-radius:10px 10px 0 0;
-    background-image: url('./images/illustration-hero.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .bottom-half{
+    height: auto;
     border-radius: 0 0 10px 10px;
     background-color: white;
     display: flex;
-    height: auto;
     flex-direction: column;
     text-align: center;
 }
@@ -49,14 +61,15 @@ body{
     font-weight: 900;
 }
 
-.order-paragraph{
+.order-paragraph-container{
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
-    font-family: 'Red Hat Display'
+    font-family: 'Red Hat Display';
+    
 }
 
-p{
+.order-paragraph p{
     font-size: 16px;
     color: hsl(224, 23%, 55%);
 }
@@ -75,7 +88,7 @@ p{
     
 }
 
-.subscription-box h5{
+.subscription-box span{
     font-weight: 900;
 }
 
@@ -95,19 +108,100 @@ p{
     width: 100%;
     background-color: blue;
     font-family: 'Red Hat Display';
+    font-weight: 700;
     box-shadow: 0px 5px 5px 5px hsl(225, 100%, 94%);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+.payment .btn-secondary:hover{
+    background-color: blue; 
+}
+
 
 .cancel-order{
-    border: 2px solid red;
     margin-top: 15px;
     margin-bottom: 20px;
+}
+
+.cancel-order p{
+    font-weight: 900;
+    font-family: 'Red Hat Display';
+    color:hsl(224, 23%, 55%);
 }
 
 
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 700px) {
+
+    .main-container{
+        height: 563px;
+        width: 367px;
+    }
+    
+    .order-paragraph p{
+      font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .main-container{
+        height: 840px;
+        width: 500px;
+    }
+
+    .order-summary h4{
+        font-size: 45px;
+    }
+
+    .order-paragraph{
+        padding: 9px;
+    }
+    
+    .order-paragraph p{
+      font-size: 29px;
+    }
+
+    .order-paragraph-container{
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 10px;
+    }
+
+    .order-plan-container img{
+        height: 76px;
+    }
+
+    .change-button {
+        font-size: 25px;
+    }
+
+    .subscription-box span{
+       font-size: 26px;
+    }
+
+    .subscription-box p{
+        font-size: 26px;
+    }
+
+    .payment{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .payment .btn{
+        font-size:33px
+    }
+
+    .cancel-order p{
+        font-size: 27px;
+    }
+
+    
+
+    
+}
